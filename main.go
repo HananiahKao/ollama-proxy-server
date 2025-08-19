@@ -119,7 +119,7 @@ func main() {
 	}
 
 	log.Println("Starting HTTPS proxy to Ollama at", ollamaAddr, "on port", port)
-	err = server.ListenAndServeTLS("", "")
+	err = server.ListenAndServe()
 	if err != nil {
 		log.Fatal(err)
 	}
