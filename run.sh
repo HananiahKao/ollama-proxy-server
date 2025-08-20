@@ -8,6 +8,6 @@ chmod -R go-w "$(brew --prefix)/share/zsh"
 
 brew install ollama
 
-ollama serve &
+OLLAMA_DEBUG=DEBUG OLLAMA_ORIGINS="*" OLLAMA_HOST=0.0.0.0:$PORT ollama serve
 
-./app
+#./app
