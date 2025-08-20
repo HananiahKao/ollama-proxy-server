@@ -8,6 +8,6 @@ chmod -R go-w "$(brew --prefix)/share/zsh"
 
 brew install ollama
 
-ollama serve
+ollama serve &
 
 ./app
